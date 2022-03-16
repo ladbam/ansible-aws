@@ -1,0 +1,16 @@
+# Install Ansible on Master(Unbuntu)
+apt-get update
+apt-get install software-properties-common
+apt-add-repository ppa:ansible/ansible
+apt-get update
+apt-get install ansible -y
+
+# Install Python on Hosts Worker
+apt-get update
+apt-get  install python -y
+
+# Configure SSH access on Ansible Host
+ssh-keygen
+
+# On hosts worker
+vi .ssh/aouthorized_keys
